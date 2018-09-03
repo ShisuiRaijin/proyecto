@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Venta de juegos</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="media/grid-world.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+
+        <a class="site-header" href="index.html">
+            <h1>Venta de juegos</h1>
+        </a>
+
+        <!--Barra de navegacion-->
+        <nav class="site-header" id="navbar">
+
+            <!--Registro-->
+            <a href="registro/registro.html">Registro</a>
+
+            <!--Consultas-->
+            <a href="consultas/consulta.html">Consultas</a></p>
+
+        </nav>
+
+        <!--Login-->
+        <form class="site-header" action="post" id="login">
+        
+            <input
+            type="text" 
+            placeholder="Usuario"
+            minlength="5"
+            maxlength="50"
+            required>
+
+            <input 
+            type="password" 
+            placeholder="Contraseña"
+            maxlength="50" 
+            pattern="^[a-zA-Z0-9.\s]+$"
+            required>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+
+    </header>
+
+
+    <!--Lista de juegos lateral-->
+    <aside>
+        <div  class="dropdown">
+
+            <h4>Lista de juegos</h4>
+
+            <div class="dropdown-content">
+                <ul>
+
+                    <li class="categoria">FPS
+                        <ul>
+                            <li><a href="juego/csgo.html">Counter-Strike: Global Offensive</a></li>
+                            <li>Call of Duty: WW2</li>
+                            <li>Battelfield 1</li>
+                        </ul>
+                    </li>
+
+
+                    <li class="categoria">RPG
+                        <ul>
+                            <li>Pokemon Luna</li>
+                            <li>Final Fantasy XV</li>
+                            <li>Dark Souls 3</li>
+                        </ul>
+                    </li>
+
+                    <li class="categoria">Battlle Royale
+                        <ul>
+                            <li>Player's Unknow Battle Grounds</li>
+                            <li>Fortnite</li>
+                            <li>The Darwin Project</li>
+                        </ul>
+                    </li>
+
+                    <li class="categoria">Sanbox
+                        <ul>
+                            <li>Minecraft</li>
+                            <li>GTA San Andreas</li>
+                            <li>Garry's Mod</li>
+                            <li>Metal Gear 5</li>
+                            <li>Terraria</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!--Nuevos juegos-->
+    <main>
+
+        <article>
+
+            <a href="juego/csgo.html">
+
+                <img 
+                src="media/csgo.jpg" 
+                alt="csgo portada"
+                title="Counter Strike: Global Offensive / FPS / 15 U$D">
+
+            </a>
+
+        </article>
+
+        <article> 
+            
+            <img 
+            src="media/dota2.jpg" 
+            alt="dota portada" 
+            title="DOTA 2 / Moba / 15 U$D">
+
+        </article>  
+
+        <article>
+
+            <img 
+            src="media/skyrim.jpg" 
+            alt="skyrim portada" 
+            title="Elder's Scrolls V: Skryrim / RPG / 30 U$D">
+
+        </article>
+
+        <article>
+
+            <img 
+            src="media/smite.jpg" 
+            alt="smite portada" 
+            title="Smite / Moba / 10 U$D">
+
+        </article>
+
+        <article>
+
+            <img 
+            src="media/dishonored.jpg" 
+            alt="portada de dishonored" 
+            title="Dishonored 2 / Sigilo / 60 U$D">
+
+        </article>
+
+        <article>
+
+            <img 
+            src="media/pubg.jpg" 
+            alt="pubg portada" 
+            title="PlayerUnknown's Battlegrounds / Batlle Royale / 30 U$D">
+
+        </article>
+
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+        
+        <h4>Contacto: </h4>
+
+        <ul>
+
+            <li>
+
+                <a href="https://www.linkedin.com/in/mauro-reyes-72a560150/">LinkedIn</a>
+
+            </li>
+
+            <li>
+
+                Email: imauror98@gmail.com
+
+            </li>
+
+            <li>
+
+                <!--link a al inicio-->
+                <a href="index.html">Vuelve al inicio</a>
+                    
+            </li>
+
+        </ul>
+    </footer>
+</body>
+</html>

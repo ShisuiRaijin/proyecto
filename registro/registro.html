@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="icon" href="../media/profile.png">
+
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+
+        <a class="site-header" href="../index.html">
+            <h1>Venta de juegos</h1>
+        </a>
+
+        <!--Barra de navegacion-->
+        <nav class="site-header" id="navbar">
+
+            <!--Consultas-->
+            <a href="../consultas/consulta.html">Consultas</a>
+
+        </nav>
+
+    </header>
+
+    <!--Formulario-->
+    <main>
+        <h2>Formulario de registro</h2>
+
+        <form class="formulario" action="post">
+
+            <fieldset>
+
+                <div>
+
+                    <label for="name">Nombre de usuario:</label>
+
+                    <input 
+                    type="text" 
+                    name="username"
+                    id="username"
+                    placeholder="max 30 caracteres" 
+                    maxlength="30"
+                    required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+
+                    <input 
+                    type="password"
+                    name="contraseña" 
+                    id="pass"
+                    placeholder="solo letras y numeros"
+                    minlength="8"
+                    maxlength="24"
+                    pattern="^[a-zA-Z0-9]+$"
+                    required>
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="confirmacion">Repetir la contraseña:</label>
+
+                    <input 
+                    type="password"
+                    name="confirmacion"
+                    id="passcheck"
+                    placeholder="repetir la contraseña"
+                    minlength="8"
+                    maxlength="24"
+                    pattern="^[a-zA-Z0-9.\s]+$"
+                    required
+                    oninput="check(this)">
+
+                    <!--Script para checkear que sea la misma contraseña-->
+                    <script language='javascript' type='text/javascript'>
+                        function check(input) {
+                            if (input.value != document.getElementById('pass').value) {
+                                input.setCustomValidity('La contraseña debe ser la misma');
+                            } else {
+                                input.setCustomValidity('');
+                            }
+                        }
+                    </script>
+
+                </div>
+
+                <br> 
+
+                <div>
+
+                    <label for="name">Nombre/s:</label>
+
+                        <input 
+                    type="text"
+                    name="nombre"
+                    id="name"
+                    placeholder="nombre/s"
+                    minlength="3"
+                    maxlength="30"
+                    required>
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="apellido">Apellido/s:</label>
+
+                    <input 
+                    type="text"
+                    name="apellido"
+                    id="apellido"
+                    placeholder="apellido"
+                    minlength="3"
+                    maxlength="30"
+                    required>
+
+                </div>
+
+                <br>
+
+                <div>
+                    
+                    <label for="email">Correo electronico:</label>
+
+                    <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="email"
+                    required>
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="fecha">Fecha de nacimiento:</label>
+
+                    <input 
+                    type="date"
+                    name="fecha" 
+                    id="fechadenacimiento"
+                    min="1900-01-01"
+                    max="2000-01-01"
+                    required> 
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <button id="limpiar" type="reset">Limpiar</button>
+
+                    <button id="enviar" type="submit">Enviar</button>
+
+                </div>
+                
+            </fieldset>
+        </form>
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+        <h4>Contacto:</h4>
+
+        <ul>
+
+            <li>
+
+                <a href="https://www.linkedin.com/in/mauro-reyes-72a560150/">LinkedIn</a>
+
+            </li>
+
+            <li>
+
+                Email: imauror98@gmail.com
+
+            </li>
+
+            <li>
+
+                <!--link a al inicio-->
+                <a href="../index.html">Vuelve al inicio</a>
+                
+            </li>
+
+        </ul>
+    </footer>
+</body>
+</html>

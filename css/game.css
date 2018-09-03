@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgba(169,3,41,1);
+    background: linear-gradient(to bottom, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 49%, rgba(109,0,25,1) 100%);
+    box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.75);
+    padding: 5px;
+}
+
+.site-header {
+    display: inline-block; 
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    margin: auto 0 auto 10px;
+}
+
+#login {
+    position: absolute;
+    right: 10px;
+    top: 35px
+}
+
+header form button {
+    color: white;
+    background: black;
+    border: 1px solid black;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    outline: none;
+    cursor: pointer
+}
+
+header form input {
+    border:none;
+    color: white;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    border-bottom: 1px solid white;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    background: black;
+    outline: none;
+}
+
+header form input::placeholder {
+    text-align: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+}
+
+footer { 
+    background: rgba(169,3,41,1);
+    background: linear-gradient(to bottom, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 49%, rgba(109,0,25,1) 100%);
+    box-shadow: 0px -4px 13px 0px rgba(0,0,0,0.75);
+    padding: 5px;
+    clear: both;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}
+
+.galery img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+main {
+    background: white;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+main div h3 {
+    text-align: center;
+}
+
+.trailer-desc {
+    display: inline-block;
+    margin: 10px;
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 97%, rgba(109,0,25,1) 100%);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.trailer {
+    float: left;
+    margin:0 30px 0 30px;
+}
+
+.description {
+    margin: 15px;
+    padding: 5px;
+}
+
+.req-galery {
+    display: inline-block;
+    height: auto;
+    width: 90%;
+    background: linear-gradient(to right, rgba(109,0,25,1) 0%, rgba(143,2,34,1) 0%, rgba(0,0,0,1) 100%);
+    margin: 30px 5% 30px 5%;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.galery {
+    float: right;
+    padding: 5px;
+}
+
+.requirements {
+    margin: 15px;
+    padding: 5px;
+}
+
+.buy_game {
+    text-align: center;
+    clear: both;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px 30% 30px 30%;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.buy_game button {
+    background: rgba(169,3,41,1);
+    color: black;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+}
