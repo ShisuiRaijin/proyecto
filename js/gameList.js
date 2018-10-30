@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded", function(){
 		var json = r.response;
 
 		var fps = document.getElementById("FPS")
-		var fps_array = json.FPS;
+		var fps_array = json["Games"]["FPS"];
+
+		alert(String(fps_array[1]))
 
 		for (i = 0; i < fps_array.length; i++)
 		{
-			fps.innerHTML = fps.innerHTML + "<li><a href='"+ fps.fps_array[i].link +
-			"'>" + fps_array[i].name + "</a></li>";
+			item = fps_array[i]
+			fps.innerHTML = fps.innerHTML + "<li><a href='"+ fps.fps_array[i]["link"] +
+			"'>" + fps_array[i]["name"] + "</a></li>";
 		};
 
 	}
