@@ -1,0 +1,30 @@
+{
+	"Games": {
+		
+		"FPS": [
+			{"name": "Counter-Strike: Global Offensive", "link": "https://shisuiraijin.github.io/proyecto/media/csgo.jpg"},
+			{"name": "Call of Duty: WW2", "link": ""},
+			{"name": "Battelfield 1", "link": ""}
+		],
+
+		"RPG": [
+			{"name": "Pokemon Luna", "link": ""},
+			{"name": "Final Fantasy XV", "link": ""},
+			{"name": "Dark Souls 3", "link": ""}
+		],
+
+		"Battle Royale": [
+			{"name": "Player's Unknow Battle Grounds", "link": ""},
+			{"name": "Fortnite", "link": ""},
+			{"name": "The Darwin Project", "link": ""}
+		],
+
+		"SandBox": [
+			{"name": "Minecraft", "link": ""},
+			{"name": "GTA San Andreas", "link": ""},
+			{"name": "Garry's Mod", "link": ""},
+			{"name": "Metal Gear 5", "link": ""},
+			{"name": "Terraria", "link": ""}
+		]
+	}
+}
