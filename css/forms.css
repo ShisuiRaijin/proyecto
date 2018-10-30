@@ -92,6 +92,10 @@ main form fieldset div input  {
     line-height: 2em;
 }
 
+main {
+    overflow: scroll;
+}
+
 main form fieldset div input[type="date"] {
     width: 169px;
 }
@@ -154,3 +158,11 @@ main form fieldset div textarea {
     outline: none;
 }
 
+/* Telefonos */
+@media screen and (max-device-width: 600px ) {
+    footer {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+    }
+}

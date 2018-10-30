@@ -152,3 +152,10 @@ main div h3 {
     cursor: pointer;
     margin: 0 10px 0 10px;
 }
+
+/* Telefonos */
+@media screen and (max-device-width: 600px ) {
+    .trailer {
+        float: none;
+    }
+}
