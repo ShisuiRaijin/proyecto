@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		var fps = document.getElementById("FPS")
 		var fps_array = json.FPS;
 
-		for (i = 0; i < fps_array.lenght; i++)
+		for (i = 0; i < fps_array.length; i++)
 		{
 			fps.innerHTML = fps.innerHTML + "<li><a href='"+ fps.fps_array[i].link +
 			"'>" + fps_array[i].name + "</a></li>";
