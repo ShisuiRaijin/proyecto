@@ -9,19 +9,26 @@ document.addEventListener("DOMContentLoaded", function(){
 	r.onload = function()
 	{
 		var json = r.response;
+		var gameArray = json["Games"];
+		var list = document.getElementById("gameList")
 
-		var fps = document.getElementById("FPS")
-		var fps_array = json["Games"]["FPS"];
-
-		alert(String(fps_array[1]))
-
-		for (i = 0; i < fps_array.length; i++)
+		for (i = 0; i < gameArray.length; i++)
 		{
-			item = fps_array[i]
-			fps.innerHTML = fps.innerHTML + "<li><a href='"+ fps.fps_array[i]["link"] +
-			"'>" + fps_array[i]["name"] + "</a></li>";
-		};
+			var game = gameArray[i];
+			var category = game["category"];
+			var name = game["name"];
+			var link = game["link"];
+			var cat = document.getElementById(category);
+			if (cat == null)
+			{
+				list.innerHTML = list.innerHTML + "WIP"
+				elem.innerText = category;
+			} else 
+			{
 
-	}
+			}
+
+		};
+	};
 
 })

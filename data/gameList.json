@@ -1,30 +1,18 @@
 {
-	"Games": {
-		
-		"FPS": [
-			{"name": "Counter-Strike: Global Offensive", "link": "https://shisuiraijin.github.io/proyecto/media/csgo.jpg"},
-			{"name": "Call of Duty: WW2", "link": ""},
-			{"name": "Battelfield 1", "link": ""}
-		],
-
-		"RPG": [
-			{"name": "Pokemon Luna", "link": ""},
-			{"name": "Final Fantasy XV", "link": ""},
-			{"name": "Dark Souls 3", "link": ""}
-		],
-
-		"Battle Royale": [
-			{"name": "Player's Unknow Battle Grounds", "link": ""},
-			{"name": "Fortnite", "link": ""},
-			{"name": "The Darwin Project", "link": ""}
-		],
-
-		"SandBox": [
-			{"name": "Minecraft", "link": ""},
-			{"name": "GTA San Andreas", "link": ""},
-			{"name": "Garry's Mod", "link": ""},
-			{"name": "Metal Gear 5", "link": ""},
-			{"name": "Terraria", "link": ""}
-		]
-	}
+	"Games": [
+		{"category": "FPS", "name": "Counter-Strike: Global Offensive", "link": "https://shisuiraijin.github.io/proyecto/media/csgo.jpg"},
+		{"category": "FPS", "name": "Call of Duty: WW2", "link": ""},
+		{"category": "FPS","name": "Battelfield 1", "link": ""},
+		{"category": "RPG", "name": "Pokemon Luna", "link": ""},
+		{"category": "RPG","name": "Final Fantasy XV", "link": ""},
+		{"category": "RPG","name": "Dark Souls 3", "link": ""},	
+		{"category": "BR", "name": "Player's Unknow Battle Grounds", "link": ""},
+		{"category": "BR", "name": "Fortnite", "link": ""},
+		{"category": "BR", "name": "The Darwin Project", "link": ""},
+		{"category": "SandBox", "name": "Minecraft", "link": ""},
+		{"category": "SandBox", "name": "GTA San Andreas", "link": ""},
+		{"category": "SandBox", "name": "Garry's Mod", "link": ""},
+		{"category": "SandBox", "name": "Metal Gear 5", "link": ""},
+		{"category": "SandBox", "name": "Terraria", "link": ""}
+	]
 }
