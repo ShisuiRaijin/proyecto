@@ -28,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function(){
 				var ul = document.createElement('ul');
 				ul.setAttribute("id", gameCategory);
 				cat.appendChild(ul);
+
+				var elem = document.getElementById(category);
+				var name= document.createElement('li');
+				name.innerText = gameName;
+				elem.appendChild(name);
+				var link = document.createElement('a');
+				link.setAttribute("href", link);
+				name.appendChild(link);
 				
 			} else 
 			{
