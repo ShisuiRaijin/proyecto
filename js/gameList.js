@@ -15,19 +15,30 @@ document.addEventListener("DOMContentLoaded", function(){
 		for (i = 0; i < gameArray.length; i++)
 		{
 			var game = gameArray[i];
-			var category = game["category"];
-			var name = game["name"];
-			var link = game["link"];
-			var cat = document.getElementById(category);
+			var gameCategory = game["category"];
+			var gameName = game["name"];
+			var gameLink = game["link"];
+			var category = document.getElementById(category);
+
 			if (cat == null)
 			{
-				list.innerHTML = list.innerHTML + "WIP"
-				elem.innerText = category;
+				var cat = document.createElement('li');
+				cat.innerText = gameCategory;
+				list.appendChild(cat);
+				var ul = document.createElement('ul');
+				ul.setAttribute("id", gameCategory);
+				cat.appendChild(ul);
+				
 			} else 
 			{
-
+				var elem = document.getElementById(category);
+				var name= document.createElement('li');
+				name.innerText = gameName;
+				elem.appendChild(name);
+				var link = document.createElement('a');
+				link.setAttribute("href", link);
+				name.appendChild(link);
 			}
-
 		};
 	};
 
