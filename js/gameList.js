@@ -39,5 +39,4 @@ document.addEventListener("DOMContentLoaded", function(){
 			link.appendChild(name);
 		};
 	};
-
 })
