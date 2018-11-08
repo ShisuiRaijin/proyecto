@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function(){
 				var ul = document.createElement('ul');
 				ul.setAttribute("id", gameCategory);
 				cat.appendChild(ul);
+				category = document.getElementById(gameCategory);
 			}
 
-			category = document.getElementById(gameCategory);
+			var link = document.createElement('a');
+			link.setAttribute("href", gameLink);
+			category.appendChild(link);
 			var name = document.createElement('li');
 			name.innerText = gameName;
-			category.appendChild(name);
-			var link = document.createElement('a');
-			link.setAttribute("href", link);
-			name.appendChild(link);
+			link.appendChild(name);
 		};
 	};
 
