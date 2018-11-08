@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function(){
 			var gameCategory = game["category"];
 			var gameName = game["name"];
 			var gameLink = game["link"];
-			var category = document.getElementById(category);
+			var category = document.getElementById(gameCategory);
 
-			if (cat == null)
+			if (category == null)
 			{
 				var cat = document.createElement('li');
 				cat.innerText = gameCategory;
@@ -30,14 +30,13 @@ document.addEventListener("DOMContentLoaded", function(){
 				cat.appendChild(ul);
 			}
 
-			var elem = document.getElementById(category);
-			var name= document.createElement('li');
+			category = document.getElementById(gameCategory);
+			var name = document.createElement('li');
 			name.innerText = gameName;
-			elem.appendChild(name);
+			category.appendChild(name);
 			var link = document.createElement('a');
 			link.setAttribute("href", link);
 			name.appendChild(link);
-			
 		};
 	};
 
