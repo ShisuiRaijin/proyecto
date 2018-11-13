@@ -39,5 +39,4 @@ document.addEventListener("DOMContentLoaded", function(){
 			category.appendChild(name);
 		};
 	};
-
 })
