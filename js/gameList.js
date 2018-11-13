@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
 			var link = document.createElement('a');
 			link.setAttribute("href", gameLink);
-			category.appendChild(link);
 			var name = document.createElement('li');
-			name.innerText = gameName;
-			link.appendChild(name);
+			link.innerText = gameName;
+			name.appendChild(link);
+			category.appendChild(name);
 		};
 	};
 
