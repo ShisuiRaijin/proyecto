@@ -1,11 +1,23 @@
-function buyGame() {
-    var form = document.getElementById("buy");
-    form.style.display="block";
-    
-    var footer = document.getElementById("mainContainer");
-    footer.style.marginBottom="600px";
+var precio = document.getElementById("prePrecio")
 
-    extraFields();
+
+function buyGame(bool) {
+
+    if (bool == true) {
+        var form = document.getElementById("buy");
+        form.style.display="block";
+        
+        var footer = document.getElementById("mainContainer");
+        footer.style.marginBottom="600px";
+
+        extraFields();
+    }else{
+        var form = document.getElementById("buy");
+        form.style.display="none";
+
+        var footer = document.getElementById("mainContainer");
+        footer.style.marginBottom="200px";
+    }
 }
 
 function addItem() {
@@ -28,8 +40,12 @@ function extraFields(bool) {
     if (bool == true) {
         var elem = document.getElementById("delivery");
         elem.style.display="block";
+        elem = document.getElementById("precioEnvio")
+        elem.style.display="block";
     }else{
         var elem = document.getElementById("delivery");
+        elem.style.display="none";
+        elem = document.getElementById("precioEnvio")
         elem.style.display="none";
     }
 }
