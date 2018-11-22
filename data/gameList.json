@@ -1,6 +1,6 @@
 {
 	"Games": [
-		{"category": "FPS", "name": "Counter-Strike: Global Offensive", "link": "https://shisuiraijin.github.io/proyecto/juego/csgo.html"},
+		{"category": "FPS", "name": "Counter-Strike: Global Offensive", "link": "juego/csgo.html"},
 		{"category": "FPS", "name": "Call of Duty: WW2", "link": ""},
 		{"category": "FPS","name": "Battelfield 1", "link": ""},
 		{"category": "RPG", "name": "Pokemon Luna", "link": ""},
