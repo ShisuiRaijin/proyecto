@@ -89,7 +89,7 @@ footer a {
 
 main {
     background: white;
-    margin-bottom: 500px;;
+    margin-bottom: 200px;;
 }
 
 main h2 {
@@ -191,4 +191,8 @@ main div h3 {
     display: inline-block; 
     width: 200px; 
     text-align: right; 
+}
+
+.delivery{
+    display: none;
 }
