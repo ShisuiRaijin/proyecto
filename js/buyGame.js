@@ -1,6 +1,3 @@
-var precio = document.getElementById("prePrecio")
-
-
 function buyGame(bool) {
 
     if (bool == true) {
@@ -25,6 +22,7 @@ function addItem() {
     var num = parseInt(quantity.innerText);
     num++;
     quantity.innerText = num;
+    setPrePrice(10);
 }
 
 function subItem() {
@@ -33,6 +31,7 @@ function subItem() {
     if (num <= 1) {return}
     num--;
     quantity.innerText = num;
+    setPrePrice(-10);
 }
 
 function extraFields(bool) {
@@ -48,4 +47,11 @@ function extraFields(bool) {
         elem = document.getElementById("precioEnvio")
         elem.style.display="none";
     }
+}
+
+function setPrePrice(quantity) {
+    var precioElement = document.getElementById("prePrecio");
+    var precio = parseInt(precioElement.innerText);
+    precio = precio + quantity;
+    precioElement.innerText = precio;
 }

@@ -1,7 +1,29 @@
 {
-	"CSGO": {
+	"Games": [{
 		"title": "Counter Strike: Global Offensive",
 		"trailer": "<iframe width='560' height='315' src='https://www.youtube.com/embed/edYCtaNueQY' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen align='center'> <p>Fallback para navegadores que no soportan iframe <a href='https://www.youtube.com/watch?v=edYCtaNueQY'>aqui</a> </p> </iframe>",
-		"description": ""
-	}
+		"category": "Categoria: Multiplayer / FPS",
+		"description": [
+			"Counter-Strike: Global Offensive (CS: GO) ampliará la jugabilidad de acción por equipos que fue pionera en su lanzamiento hace 12 años.",
+			"CS: GO incluirá nuevos mapas, personajes y armas y ofrecerá versiones actualizadas del contenido clásico de CS (de_dust2, etc.). Además, CS: GO introducirá nuevos modos de juego, matchmaking, marcadores y mucho más.",
+			"Counter-Strike cogió la industria de los videojuegos por sorpresa cuando, contra todo pronóstico, el MOD se convirtió en el juego de acción online para PC más jugado del mundo tras su lanzamiento en agosto de 1999, dijo Doug Lombardi de Valve. En los últimos 12 años, ha continuado siendo uno de los juegos más jugados del mundo, el protagonista de los torneos de videojuegos competitivos y se han vendido más de 25 millones de copias por todo el mundo. CS: GO promete ampliar la aclamada jugabilidad de CS y ofrecerla a los jugadores de PC, así como a los de las consolas de última generación y Mac."
+		],
+		"requirements": [
+			"MÍNIMO:",
+			"Windows® 7/Vista/XP",
+			"Procesador: Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better",
+			"Memoria: 2 GB de RAM",
+			"Gráficos: Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0",
+			"DirectX: Versión 9.0c",
+			"Almacenamiento: 15 GB de espacio disponible"
+		],
+		"galery": [
+			["../media/csgo.jpg", "imagen de muestra csgo"],
+			["../media/csgo2.png", "imagen de muestra csgo"],
+			["../media/csgo3.png", "banner csgo"],
+			["../media/csgo4.jpg", "logo ct/tt"]
+		],
+		"precio": "15U$D",
+		"rating": "9/10"
+	}]
 }

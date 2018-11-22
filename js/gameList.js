@@ -39,17 +39,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
 			var link = document.createElement('a');
 			link.setAttribute("href", gameLink);
-<<<<<<< HEAD
 			link.innerText = gameName;
 			category.appendChild(link);
 			var name = document.createElement('li');
 			link.appendChild(name);
-=======
-			var name = document.createElement('li');
-			link.innerText = gameName;
-			name.appendChild(link);
-			category.appendChild(name);
->>>>>>> c36b9c4038a328feeea78b3258c102df00672a1d
 		};
 	};
 })
