@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function(){
 				category = document.getElementById(gameCategory);
 			}
 
+			var name = document.createElement('li');
 			var link = document.createElement('a');
 			link.setAttribute("href", gameLink);
 			link.innerText = gameName;
-			category.appendChild(link);
-			var name = document.createElement('li');
-			link.appendChild(name);
+			name.appendChild(link);
+			category.appendChild(name);
 		};
 	};
 })
