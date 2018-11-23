@@ -1,5 +1,5 @@
 {
-	"Games": [{
+	"csgo": {
 		"title": "Counter Strike: Global Offensive",
 		"trailer": "<iframe width='560' height='315' src='https://www.youtube.com/embed/edYCtaNueQY' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen align='center'> <p>Fallback para navegadores que no soportan iframe <a href='https://www.youtube.com/watch?v=edYCtaNueQY'>aqui</a> </p> </iframe>",
 		"category": "Categoria: Multiplayer / FPS",
@@ -25,5 +25,5 @@
 		],
 		"precio": "15U$D",
 		"rating": "9/10"
-	}]
+	}
 }

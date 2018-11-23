@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<title>CS:GO</title>
+	<link rel="stylesheet" href="../css/game.css" />
+	<link rel="icon" href="../media/grid-world.png">
+	<script src="../js/buyGame.js"></script>
+	<script src="../js/loadGames.js"></script>
+
+</head>
+
+<body>
+	<!--Cabecera-->
+	<header>
+
+		<a class="site-header" href="../index.html">
+			<h1>Venta de juegos</h1>
+		</a>
+
+		<!--Barra de navegacion-->
+		<nav class="site-header" id="navbar">
+
+			<!--Registro-->
+			<a href="../registro/registro.html">Registro</a>
+
+			<!--Consultas-->
+			<a href="../consultas/consulta.html">Consultas</a>
+
+		</nav>
+
+		<!--Login-->
+		<form class="site-header" action="post" id="login">
+		
+			<input
+			type="text" 
+			placeholder="Usuario"
+			minlength="5"
+			maxlength="50"
+			required>
+
+			<input 
+			type="password" 
+			placeholder="Contraseña"
+			maxlength="50" 
+			pattern="^[a-zA-Z0-9.\s]+$"
+			required>
+
+			<button type="submit">Entrar</button>
+
+		</form>
+
+	</header>
+
+	<!--Contenido-->
+	<main id="mainContainer">
+
+		<!--Titulo de juego-->
+		<h2 id="gameTitle"></h2>
+
+		<div class="trailer-desc">
+			<!--Trailer-->
+			<section class="trailer" id="gameTrailer">
+
+				<h3>Trailer:</h3>
+
+			</section>
+
+			<!--Descripcion-->
+			<section class="description">
+
+				<article>
+
+					<h3>Acerca de este juego:</h3>
+
+					<p>Categoria: Multiplayer / FPS</p>
+					<p>Counter-Strike: Global Offensive (CS: GO) ampliará la jugabilidad de acción por equipos que fue pionera en su lanzamiento hace 12 años.</p>
+					<p>CS: GO incluirá nuevos mapas, personajes y armas y ofrecerá versiones actualizadas del contenido clásico de CS (de_dust2, etc.). Además, CS: GO introducirá nuevos modos de juego, matchmaking, marcadores y mucho más.</p>
+					<p>"Counter-Strike cogió la industria de los videojuegos por sorpresa cuando, contra todo pronóstico, el MOD se convirtió en el juego de acción online para PC más jugado del mundo tras su lanzamiento en agosto de 1999", dijo Doug Lombardi de Valve. "En los últimos 12 años, ha continuado siendo uno de los juegos más jugados del mundo, el protagonista de los torneos de videojuegos competitivos y se han vendido más de 25 millones de copias por todo el mundo. CS: GO promete ampliar la aclamada jugabilidad de CS y ofrecerla a los jugadores de PC, así como a los de las consolas de última generación y Mac."</p>
+
+				</article>
+
+			</section>
+		</div>
+
+		<div class="req-galery">
+
+			<!--Imagenes del juego-->
+			<section class="galery">
+
+				<h3>Galeria:</h3>
+
+				<img 
+				src="../media/csgo.jpg" 
+				alt="imagen de muestra csgo">
+
+				<img 
+				src="../media/csgo2.png" 
+				alt="imagen de muestra csgo">
+
+				<img 
+				src="../media/csgo3.png" 
+				alt="banner csgo">
+
+				<img 
+				src="../media/csgo4.jpg" 
+				alt="logo ct/tt">
+
+			</section>
+
+			<section class="requirements">
+
+				<article>
+					
+					<h3>Requisitos:</h3>
+
+					<dl>
+
+						<dt>MÍNIMO:</dt>
+						<dd>Windows® 7/Vista/XP</dd>
+						<dd>Procesador: Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better</dd>
+						<dd>Memoria: 2 GB de RAM</dd>
+						<dd>Gráficos: Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0</dd>
+						<dd>DirectX: Versión 9.0c</dd>
+						<dd>Almacenamiento: 15 GB de espacio disponible</dd>
+
+					</dl>
+
+				</article>
+
+			</section>
+		</div>
+
+		<!--Compra / Precio / Rating-->
+		<section class="buy_game">
+
+			<p>Precio: 15U$D / Rating: 9/10
+
+				<button type="button" onclick="buyGame(true)">Comprar</button>
+
+			</p>
+			
+			<div class="buy_form" id="buy">
+
+				<h4>Complete los siguientes datos para su compra</h4>
+
+				<form>
+					<div>
+						<label class="fields" for="name">Nombre</label>
+						<input class="fields" name="name" id ="name" type="text" required minlength="3" maxlength="50">
+						
+						<br>
+
+						<label class="fields" for="email">Email</label>
+						<input class="fields" name="email" id="email" type="email">
+					</div>
+					
+					<div>
+						<label for="mtp">Metodo de pago</label>
+						<select name="mtp" id="payMethod">
+							<option value="creditCard">Tarjeta de credito</option>
+							<option value="cash">Efectivo</option>
+							<option value="bankTransfer">Transferencia bancaria</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="itemQuantity">Cantidad de copias: </label>
+						<button type="button" onclick="addItem()" class="quantity">
+							+
+						</button>
+						<p id="itemQuantity" class="quantity">1</p>
+						<button type="button" onclick="subItem()" class="quantity">
+							-
+						</button>
+					</div>
+	
+					<div>
+	
+						<label for="digital">Edicion digital</label>
+						<input name="format" value="digital" type="radio" onclick="extraFields(false)" checked>
+	
+						<label for="physical">Edicion fisica</label>
+						<input name="format" value="physical" type="radio" onclick="extraFields(true)">
+					</div>
+
+					<br>
+
+					<div id="delivery">
+						
+							<label class="fields" for="dir">Direción</label>
+							<input class="fields" id="dir" type="text">
+		
+							<p> Tipo de envio <br>
+								<label for="comun">comun</label>
+								<input name="delivery" value="comun" type="radio">
+								<label for="especial">especial</label>
+								<input name="delivery" value="especial" type="radio">
+								<label for="premiun">premiun</label>
+								<input name="delivery" value="premiun" type="radio">
+							</p>
+					</div>
+				
+					<div>
+						<div>
+							<label for="prePrecio">Precio en USD(Sin impuestos):</label>
+							<div id="prePrecio">0</div>
+						</div>
+
+						<div id="precioEnvio">
+							<label for="envio">Precio de envio en USD</label>
+							<div id="envio">0</div>
+						</div>
+
+						<div>
+							<label for="Precio">Precio total en USD:</label>
+							<div id="precio">0</div>
+						</div>
+					</div>
+					
+					<div>
+						<button type="submit">Comprar</button>
+						<button type="button" onclick="buyGame(false)">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<!--Pie de pagina-->
+	<footer>
+
+		<h4>Contacto:</h4>
+
+		<ul>
+
+			<li>
+
+				<a href="https://www.linkedin.com/in/mauro-reyes-72a560150/">LinkedIn</a>
+
+			</li>
+
+			<li>
+
+				Email: imauror98@gmail.com
+
+			</li>
+
+			<li>
+				
+				<!--link a al inicio-->
+				<a href="../index.html">Vuelve al inicio</a>
+				
+			</li>
+			
+		</ul>
+	</footer>
+</body>
+</html>
