@@ -108,6 +108,10 @@ function setPrePrice(quantity) {
     setPrice();
 }
 
+/**
+ * function for setting the shipping price
+ * @param {*} option shipping type
+ */
 function setShippingPrice(option) {
     var elem = document.getElementById("envio");
 
