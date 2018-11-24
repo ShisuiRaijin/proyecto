@@ -166,7 +166,7 @@ main div h3 {
 @media screen and (max-device-width: 600px ) {
     .trailer {
         float: none;
-        margin-left: 2%;
+        margin-left: 22%;
     }
 
     main, .site-header, .requirements, .buy_form {
