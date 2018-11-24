@@ -67,6 +67,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		var price = game["price"];
 		var rating = game["rating"];
 
-		elem.innerText = price + " U$D " + rating;
+		elem.innerText = price + " U$D / Rating: " + rating;
 	}
 })

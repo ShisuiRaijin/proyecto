@@ -166,18 +166,32 @@
 		
 							<p> Tipo de envio <br>
 								<label for="comun">comun</label>
-								<input name="delivery" value="comun" type="radio" checked>
+								<input name="delivery" 
+								value="comun" 
+								type="radio" 
+								onclick="setShippingPrice('comun')" 
+								checked>
+
 								<label for="especial">especial</label>
-								<input name="delivery" value="especial" type="radio">
+								<input 
+								name="delivery" 
+								value="especial" 
+								type="radio"
+								onclick="setShippingPrice('especial')">
+								
 								<label for="premiun">premiun</label>
-								<input name="delivery" value="premiun" type="radio">
+								<input 
+								name="delivery" 
+								value="premiun" 
+								type="radio"
+								onclick="setShippingPrice('premiun')">
 							</p>
 					</div>
 				
 					<div>
 						<div>
 							<label for="prePrecio">Precio en USD(Sin impuestos):</label>
-							<div id="prePrecio">15</div>
+							<div id="prePrecio">0</div>
 						</div>
 
 						<div id="precioEnvio">
@@ -187,7 +201,7 @@
 
 						<div>
 							<label for="Precio">Precio total en USD:</label>
-							<div id="precio">15</div>
+							<div id="precio">0</div>
 						</div>
 					</div>
 					

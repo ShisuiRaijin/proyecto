@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var json = r.response;
         var gameId = document.getElementById("gameId");
 
-        var gamePrice = json[gameId]["price"]
+        var gamePrice = json[gameId.innerText]["price"]
+        setPrePrice(parseInt(gamePrice));
     }
 })
 
@@ -72,13 +73,26 @@ function extraFields(bool) {
     if (bool == true) {
         var elem = document.getElementById("delivery");
         elem.style.display="block";
+
         elem = document.getElementById("precioEnvio")
         elem.style.display="block";
+
+        setShippingPrice("comun");
+
+        elem = document.getElementById("dir");
+        elem.setAttribute("required", true);
+
     }else{
         var elem = document.getElementById("delivery");
         elem.style.display="none";
+
         elem = document.getElementById("precioEnvio")
         elem.style.display="none";
+
+        setShippingPrice();
+
+        elem = document.getElementById("dir");
+        elem.removeAttribute("required");
     }
 }
 
@@ -91,8 +105,42 @@ function setPrePrice(quantity) {
     var precio = parseInt(precioElement.innerText);
     precio += quantity;
     precioElement.innerText = precio;
+    setPrice();
 }
 
-function  setPrice(quantity) {
-    
+function setShippingPrice(option) {
+    var elem = document.getElementById("envio");
+
+    if (option == "comun") {
+        elem.innerText = 10;
+        setPrice();
+    }else if (option == "especial"){
+        elem.innerText = 20;
+        setPrice();
+    }else if (option == 'premiun'){
+        elem.innerText = 30;
+        setPrice();
+    }else{
+        elem.innerText = 0;
+        setPrice();
+    }
+}
+
+/**
+ * function for adding fees
+ */
+function setPrice() {
+    var prePrecioElement = document.getElementById("prePrecio");
+    var prePrecio = parseInt(prePrecioElement.innerText);
+
+    var precioElement = document.getElementById("precio");
+    var precio = parseInt(precioElement.innerText);
+
+    var shippingElement = document.getElementById("envio");
+    var shippingCost = parseInt(shippingElement.innerText);
+
+    var total = (prePrecio + shippingCost)
+    precio = total * 1.22;
+    precio = parseInt(precio);
+    precioElement.innerText = precio;
 }
