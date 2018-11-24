@@ -152,21 +152,21 @@ main div h3 {
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
-.buy_game button {
+.Btn {
     background: rgba(169,3,41,1);
-    color: black;
+    color: white;
     padding: 5px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    margin: 0 10px 0 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 /* Telefonos */
 @media screen and (max-device-width: 600px ) {
     .trailer {
         float: none;
-        margin-left: 20%;
+        margin-left: 2%;
     }
 
     main, .site-header, .requirements, .buy_form {
@@ -186,6 +186,8 @@ main div h3 {
 
 .quantity {
     display: inline-block;
+    border-radius: 100%;
+    color: white;
 }
 
 .fields {
@@ -196,6 +198,34 @@ main div h3 {
     display: inline-block; 
     width: 200px; 
     text-align: right; 
+}
+
+.inputs {
+    border:none;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    background: black;
+    outline: none;
+    margin-left: 30px;
+    outline: none;
+    line-height: 2em;
+}
+
+.quantityBtn{
+    background-color: rgba(143,2,34,1);
+    border-radius: 100%;
+    color: white;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown {
+    background-color:  black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
 }
 
 .delivery{

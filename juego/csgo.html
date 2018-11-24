@@ -6,8 +6,8 @@
 	<title>CS:GO</title>
 	<link rel="stylesheet" href="../css/game.css" />
 	<link rel="icon" href="../media/grid-world.png">
-	<script src="../js/buyGame.js"></script>
 	<script src="../js/loadGames.js"></script>
+	<script src="../js/buyGame.js"></script>
 
 </head>
 
@@ -109,7 +109,7 @@
 			<div>
 				<span id="priceRating"></span>
 
-				<button type="button" onclick="buyGame(true)">Comprar</button>
+				<button class="Btn" type="button" onclick="buyGame(true)">Comprar</button>
 
 			</div>
 			
@@ -119,56 +119,70 @@
 
 				<form>
 					<div>
-						<label class="fields" for="name">Nombre</label>
-						<input class="fields" name="name" id ="name" type="text" required minlength="3" maxlength="50">
-						
-						<br>
-
-						<label class="fields" for="email">Email</label>
-						<input class="fields" name="email" id="email" type="email">
-					</div>
-					
-					<div>
-						<label for="mtp">Metodo de pago</label>
-						<select name="mtp" id="payMethod">
+						<label for="mtp">Metodo de pago:</label>
+						<select class="dropdown" name="mtp" id="payMethod">
 							<option value="creditCard">Tarjeta de credito</option>
 							<option value="cash">Efectivo</option>
 							<option value="bankTransfer">Transferencia bancaria</option>
 						</select>
 					</div>
+					<div>
+						<label class="fields" for="name">Nombre:</label>
+						<input class="fields inputs" name="name" id ="name" type="text" required minlength="3" maxlength="50">
+						
+						<br>
+
+						<label class="fields" for="email">Email:</label>
+						<input class="fields inputs" name="email" id="email" type="email">
+					</div>
+					
 
 					<div>
 						<label for="itemQuantity">Cantidad de copias: </label>
-						<button type="button" onclick="addItem()" class="quantity">
+						<button class="quantityBtn" type="button" onclick="addItem()" class="quantity">
 							+
 						</button>
+
 						<p id="itemQuantity" class="quantity">1</p>
-						<button type="button" onclick="subItem()" class="quantity">
+
+						<button class="quantityBtn" type="button" onclick="subItem()" class="quantity">
 							-
 						</button>
 					</div>
 	
-					<div>
+					<div class="input-container">
 	
 						<label for="digital">Edicion digital</label>
-						<input name="format" value="digital" type="radio" onclick="extraFields(false)" checked>
+						<input 
+						name="format" 
+						value="digital" 
+						type="radio" 
+						onclick="extraFields(false)" 
+						class="radios"
+						checked>
 	
 						<label for="physical">Edicion fisica</label>
-						<input name="format" value="physical" type="radio" onclick="extraFields(true)">
+						<input 
+						name="format" 
+						value="physical" 
+						type="radio" 
+						onclick="extraFields(true)"
+						class="radios">
 					</div>
 
 					<br>
 
 					<div id="delivery">
 						
-							<label class="fields" for="dir">Direción</label>
-							<input class="fields" id="dir" type="text">
+							<label class="fields" for="dir">Direción:</label>
+							<input class="fields inputs" id="dir" type="text">
 		
 							<p> Tipo de envio <br>
 								<label for="comun">comun</label>
 								<input name="delivery" 
 								value="comun" 
 								type="radio" 
+								class="radios"
 								onclick="setShippingPrice('comun')" 
 								checked>
 
@@ -176,6 +190,7 @@
 								<input 
 								name="delivery" 
 								value="especial" 
+								class="radios"
 								type="radio"
 								onclick="setShippingPrice('especial')">
 								
@@ -183,6 +198,7 @@
 								<input 
 								name="delivery" 
 								value="premiun" 
+								class="radios"
 								type="radio"
 								onclick="setShippingPrice('premiun')">
 							</p>
@@ -206,8 +222,8 @@
 					</div>
 					
 					<div>
-						<button type="submit">Comprar</button>
-						<button type="button" onclick="buyGame(false)">Cancelar</button>
+						<button class="Btn" type="submit">Comprar</button>
+						<button class="Btn" type="button" onclick="buyGame(false)">Cancelar</button>
 					</div>
 				</form>
 			</div>
