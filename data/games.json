@@ -23,7 +23,7 @@
 			["../media/csgo3.png", "banner csgo"],
 			["../media/csgo4.jpg", "logo ct/tt"]
 		],
-		"precio": "15U$D",
+		"price": "15",
 		"rating": "9/10"
 	}
 }

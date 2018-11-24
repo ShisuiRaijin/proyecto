@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../css/game.css" />
 	<link rel="icon" href="../media/grid-world.png">
 	<script src="../js/buyGame.js"></script>
+	<script src="../js/loadGames.js"></script>
 
 </head>
 
@@ -56,44 +57,22 @@
 	<main id="mainContainer">
 
 		<!--Titulo de juego-->
-		<h2>Counter Strike: Global Offensive</h2>
+		<h2 id="gameTitle"></h2>
 
 		<div class="trailer-desc">
 			<!--Trailer-->
-			<section class="trailer">
+			<section class="trailer" id="gameTrailer">
 
 				<h3>Trailer:</h3>
 
-				<iframe 
-
-					width="560" 
-					height="315" 
-					src="https://www.youtube.com/embed/edYCtaNueQY" 
-					frameborder="0" 
-					allow="autoplay; encrypted-media" 
-					allowfullscreen
-					align="center">
-
-					<p>Fallback para navegadores que no soportan iframe
-
-						<a href="https://www.youtube.com/watch?v=edYCtaNueQY">aqui</a>
-
-					</p>
-
-				</iframe>
 			</section>
 
 			<!--Descripcion-->
 			<section class="description">
 
-				<article>
+				<article id="gameDescription">
 
 					<h3>Acerca de este juego:</h3>
-
-					<p>Categoria: Multiplayer / FPS</p>
-					<p>Counter-Strike: Global Offensive (CS: GO) ampliará la jugabilidad de acción por equipos que fue pionera en su lanzamiento hace 12 años.</p>
-					<p>CS: GO incluirá nuevos mapas, personajes y armas y ofrecerá versiones actualizadas del contenido clásico de CS (de_dust2, etc.). Además, CS: GO introducirá nuevos modos de juego, matchmaking, marcadores y mucho más.</p>
-					<p>"Counter-Strike cogió la industria de los videojuegos por sorpresa cuando, contra todo pronóstico, el MOD se convirtió en el juego de acción online para PC más jugado del mundo tras su lanzamiento en agosto de 1999", dijo Doug Lombardi de Valve. "En los últimos 12 años, ha continuado siendo uno de los juegos más jugados del mundo, el protagonista de los torneos de videojuegos competitivos y se han vendido más de 25 millones de copias por todo el mundo. CS: GO promete ampliar la aclamada jugabilidad de CS y ofrecerla a los jugadores de PC, así como a los de las consolas de última generación y Mac."</p>
 
 				</article>
 
@@ -103,25 +82,9 @@
 		<div class="req-galery">
 
 			<!--Imagenes del juego-->
-			<section class="galery">
+			<section class="galery" id="gameGalery">
 
 				<h3>Galeria:</h3>
-
-				<img 
-				src="../media/csgo.jpg" 
-				alt="imagen de muestra csgo">
-
-				<img 
-				src="../media/csgo2.png" 
-				alt="imagen de muestra csgo">
-
-				<img 
-				src="../media/csgo3.png" 
-				alt="banner csgo">
-
-				<img 
-				src="../media/csgo4.jpg" 
-				alt="logo ct/tt">
 
 			</section>
 
@@ -131,15 +94,7 @@
 					
 					<h3>Requisitos:</h3>
 
-					<dl>
-
-						<dt>MÍNIMO:</dt>
-						<dd>Windows® 7/Vista/XP</dd>
-						<dd>Procesador: Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better</dd>
-						<dd>Memoria: 2 GB de RAM</dd>
-						<dd>Gráficos: Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0</dd>
-						<dd>DirectX: Versión 9.0c</dd>
-						<dd>Almacenamiento: 15 GB de espacio disponible</dd>
+					<dl id="gameRequirements">
 
 					</dl>
 
@@ -151,11 +106,12 @@
 		<!--Compra / Precio / Rating-->
 		<section class="buy_game">
 
-			<p>Precio: 15U$D / Rating: 9/10
+			<div>
+				<span id="priceRating"></span>
 
 				<button type="button" onclick="buyGame(true)">Comprar</button>
 
-			</p>
+			</div>
 			
 			<div class="buy_form" id="buy">
 
@@ -210,7 +166,7 @@
 		
 							<p> Tipo de envio <br>
 								<label for="comun">comun</label>
-								<input name="delivery" value="comun" type="radio">
+								<input name="delivery" value="comun" type="radio" checked>
 								<label for="especial">especial</label>
 								<input name="delivery" value="especial" type="radio">
 								<label for="premiun">premiun</label>
@@ -221,7 +177,7 @@
 					<div>
 						<div>
 							<label for="prePrecio">Precio en USD(Sin impuestos):</label>
-							<div id="prePrecio">0</div>
+							<div id="prePrecio">15</div>
 						</div>
 
 						<div id="precioEnvio">
@@ -231,7 +187,7 @@
 
 						<div>
 							<label for="Precio">Precio total en USD:</label>
-							<div id="precio">0</div>
+							<div id="precio">15</div>
 						</div>
 					</div>
 					
@@ -272,5 +228,6 @@
 			
 		</ul>
 	</footer>
+	<div id="gameId" style="display: none">csgo</div>
 </body>
 </html>
